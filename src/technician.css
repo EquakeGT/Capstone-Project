@@ -1,0 +1,111 @@
+
+.technician-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  #myTable {
+    width: 100%;
+    display: table !important;
+    visibility: visible !important;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+ 
+  #myTable thead {
+    background-color: #007dfb;
+    color: white;
+    text-align: center;
+  }
+  
+ 
+  #myTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2; 
+  }
+  
+  #myTable th, #myTable td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  
+  #myTable tbody tr:hover {
+    background-color: #ddd;
+  }
+ 
+  .technician-page h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .sidebar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .notification-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .notification {
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  
+  .notification:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  .notification.warning {
+    background-color: #ffc107; 
+  }
+  
+  .notification.info {
+    background-color: #17a2b8; 
+  }
+  
+  .notification.read {
+    background-color: #e0e0e0; 
+    color: #6c757d; 
+    cursor: default;
+  }
+  
+  .notification.read:hover {
+    transform: none; 
+    opacity: 1;
+  }
+  
+  .progress {
+    background-color: #28a745;
+  }
+  
+  .new-task {
+    background-color: #0d6efd;
+  }
+
+  .display {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+
+  
