@@ -10,34 +10,6 @@ import ViewPastMaintenance from "./view-past-maintenance.jsx";
 
 
 
-const Home = () => {
-  const navigate = useNavigate();
-  
-  const technicianbutton = () => {
-    navigate("/technician");
-  };
-
-  return (
-    <div className="content-container">
-      <div className="hero-section">
-        <h1>Predictive maintenance system for milling machines</h1>
-        <p>Created by ....</p>
-        <button onClick={technicianbutton}>Technician (for now)</button>
-      </div>
-
-      <div>
-        <h2>What We Offer</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
-          mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor
-          neque eu tellus rhoncus ut eleifend nibh porttitor.
-        </p>
-      </div>
-    </div>
-  );
-};
-
-
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -47,20 +19,19 @@ const App = () => {
 
   return (
     <div className="app-container">
-        
-            <Router>
-              <Navbar toggle={toggle} />
-              <Sidebar isopen={isOpen} toggle={toggle} />
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/technician" element={<Technician />} />
-                <Route path="/create-progress-report/:machineId" element={<ProgressReport />} />
-                <Route path="/view-past-maintenance" element={<ViewPastMaintenance />} />
-              </Routes>
-            </Router>
-        
+      <Router>
+        <Navbar toggle={toggle} />
+        <Sidebar isopen={isOpen} toggle={toggle} />
+        <Routes>
+          {/* Change the default route to render Technician */}
+          <Route path="/" element={<Technician />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/technician" element={<Technician />} />
+          <Route path="/create-progress-report/:machineId" element={<ProgressReport />} />
+          <Route path="/view-past-maintenance" element={<ViewPastMaintenance />} />
+        </Routes>
+      </Router>
     </div>
   );
 };
