@@ -46,15 +46,15 @@ const ViewPastMaintenance = () => {
       result: "Updated software",
     },
   ];
-
+  
   return (
     <div className="view-past-maintenance-page">
-      <h1 className="title">View Past Maintenance</h1>
-      
-      
-      <button className="back-button" onClick={() => navigate(-1)}>
-        Back
-      </button>
+      <div className="header-row">
+        <button className="back-button" onClick={() => navigate(-1)}>
+          Back
+        </button>
+        <h1 className="title">View Past Maintenance</h1>
+      </div>
 
       <table>
         <thead>
