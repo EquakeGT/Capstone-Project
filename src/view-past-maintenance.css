@@ -55,7 +55,7 @@ body {
 }
 
 .view-past-maintenance-page thead {
-    background-color: #007dfb;
+    background-color: rgb(120, 134, 199);
     color: white;
     text-transform: uppercase;
     font-weight: bold;
@@ -74,7 +74,7 @@ body {
     position: absolute;
     top: 50px; /* Adjust the vertical position */
     left: -90px; /* Adjust the horizontal position */
-    background-color: #007dfb;
+    background-color: rgb(45, 51, 107);
     color: white;
     border: none;
     padding: 10px 20px;
