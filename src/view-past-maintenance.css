@@ -90,17 +90,6 @@ body {
     background-color: #005bb5;
 }
 
-/* Button Styling (if needed) */
-button {
-    padding: 10px 20px;
-    background-color: #007dfb;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
 
 button:hover {
     background-color: #005bb5;
