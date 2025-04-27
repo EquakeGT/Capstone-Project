@@ -1,6 +1,7 @@
 .progress-report-page {
-    background-color: #39435798;
+    background-color: rgb(169, 181, 223);
     height: 100vh;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,7 +10,7 @@
     position: relative; 
   }
   
-  .back-button {
+  /* .back-button {
     position: absolute;
     top: 40px; 
     left: 350px; 
@@ -21,12 +22,11 @@
     cursor: pointer;
     font-size: 14px;
     z-index: 10;
-  }
+  } */
   
   .progress-report-container {
     position: relative; 
-    background-color: #1e2726;
-    color: white;
+    background-color: rgb(120, 134, 199);
     padding: 30px;
     border-radius: 15px;
     width: 600px;
@@ -83,6 +83,11 @@
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .cancel-button:hover {
+    background-color: rgb(178, 0, 0);
+
   }
   
   .submit-button {
