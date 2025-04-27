@@ -2,8 +2,7 @@
 .technician-page {
   padding: 20px;
   font-family: 'Roboto', Arial, sans-serif;
-  background: linear-gradient(160deg, #283341 0%, #121c28 100%);
-  color: #f5f5f5;
+  background:rgb(255, 242, 242);
   min-height: 100vh;
 }
 
@@ -18,13 +17,14 @@
   margin-bottom: 20px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
 /* Header Row Styling */
 .header-row {
   display: flex;
   justify-content: space-between; 
   align-items: center; 
   margin-bottom: 20px;
-  background: rgba(23, 64, 91, 0.05);
+  background: rgb(169, 181, 223);
   padding: 15px 25px;
   border-radius: 12px;
   margin: 20px 0;
@@ -32,8 +32,8 @@
 
 /* View Maintenance Container Styling */
 .view-maintenance-container {
-  background: linear-gradient(135deg, #007dfb 0%, #0063c8 100%);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgb(45, 51, 107);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 5px 10px;
   border-radius: 5px;
   display: inline-block;
@@ -44,7 +44,7 @@
 }
 
 .view-maintenance-container:hover {
-  background-color: #005bb5; 
+  background-color: rgb(45, 51, 107);
 }
 
 .view-maintenance-container button {
@@ -76,7 +76,7 @@
 
 /* Table Header */
 #machineTable thead {
-  background-color: #1e89f3;
+  background-color: rgb(120, 134, 199);
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -108,7 +108,7 @@
 
 /* Buttons inside table */
 #machineTable button {
-  background-color: #007dfb;
+  background-color: rgb(45, 51, 107);
   color: white;
   padding: 8px 12px;
   font-size: 14px;
@@ -149,7 +149,7 @@
   background-color: rgba(255,255,255,0.08);
   padding: 15px;
   border-radius: 5px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
